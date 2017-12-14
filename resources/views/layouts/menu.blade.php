@@ -9,3 +9,9 @@
     </li>
   </ul>
 </div>
+<div class="search">
+  <form action="#" method="post">
+    <input type="text" name="search" placeholder="Chercher un titre">
+    <button type="button" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </form>
+</div>

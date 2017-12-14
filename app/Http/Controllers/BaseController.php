@@ -9,7 +9,7 @@ class BaseController extends Controller
 {
     public function index()
     {
-      $sounds = Sound::all();
-      return view('accueil', ['sounds' => $sounds]);
+      $sounds = Sound::paginate(5);
+      return view('accueil', compact('sounds'));
     }
 }

@@ -55,7 +55,7 @@ class SoundController extends Controller
          $sound->availability_id = $request->availability;
          $sound->save();
          $sound->genders()->detach();
-         $sound->genders()->attach($request->genders);
+         $sound->genders()->attach($request->gender);
          return redirect('/');
      }
 }
