@@ -15,6 +15,7 @@ Route::get('/', 'BaseController@index');
 Route::get('/create', 'CreateController@index');
 
 Route::post('/sound/insert', 'SoundController@insertOne');
-
+Route::post('/sound/update', 'SoundController@updateOneAction');
 
 Route::get('/sound/delete/{id}', 'SoundController@deleteOne');
+Route::get('/sound/update/{id}', 'SoundController@updateOne');

@@ -1,5 +1,6 @@
 body {
-
+  background-image: url(../image/background.png);
+  font-family: 'Arima Madurai';
 }
 .menu {
   background-image: url(../image/vinyl.jpg);
@@ -11,13 +12,36 @@ body {
 }
 h1 {
   color: white;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 4px;
 }
-ul {
-
+h2 {
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-size: 700;
+  margin-left: 12%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+li {
+  margin: 7px;
 }
 .flex-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.liste {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+label {
+  color: white;
+}
+th {
+  font-weight: 900;
 }
