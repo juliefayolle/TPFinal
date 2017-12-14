@@ -1,0 +1,23 @@
+body {
+
+}
+.menu {
+  background-image: url(../image/vinyl.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: white;
+}
+ul {
+
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
