@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'BaseController@index');
+Route::get('/title', 'BaseController@title');
 Route::get('/create', 'CreateController@index');
 
 Route::post('/sound/insert', 'SoundController@insertOne');

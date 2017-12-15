@@ -2,6 +2,15 @@
 @section('title', 'Accueil')
 @section('main')
   <h2>Accueil</h2>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Trier par
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="{{url('/')}}">Chanteur</a>
+        <a class="dropdown-item" href="{{url('/title')}}">Titre</a>
+      </div>
+    </div>
   <div class="liste">
     <table class="table table-striped">
       <thead>
@@ -57,5 +66,4 @@
         @endforeach
         </tbody>
       </table>
-    </div>
 @endsection

@@ -18,10 +18,10 @@ h1 {
   letter-spacing: 4px;
 }
 h2 {
+  text-align: center;
   color: white;
   font-family: 'Barlow', sans-serif;
-  font-size: 700;
-  margin-left: 12%;
+  font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -51,21 +51,26 @@ th {
   margin-top: 15px;
 }
 .pagination a {
-  color: black;
-  background-color: white;
+  color: white;
 }
 .pagination li {
-  color: black;
-  background-color: white;
-  margin-left: 2px;
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
 }
 .pagination a:hover {
-  color: white;
-  background-color: black;
+  color: grey;
 }
 .search form {
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
   margin-top: 30px;
+}
+.btn-group {
+  margin-left: 10%;
+  margin-bottom: 4px;
+}
+footer h3 {
+color: white;
 }

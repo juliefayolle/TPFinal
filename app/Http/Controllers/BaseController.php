@@ -9,7 +9,12 @@ class BaseController extends Controller
 {
     public function index()
     {
-      $sounds = Sound::paginate(5);
+      $sounds = Sound::orderBy('singer', 'asc')->paginate(5);
+      return view('accueil', compact('sounds'));
+    }
+    public function title()
+    {
+      $sounds = Sound::orderBy('title', 'asc')->paginate(5);
       return view('accueil', compact('sounds'));
     }
 }
