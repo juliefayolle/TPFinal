@@ -25,7 +25,7 @@
 
        <div class="form-group">
            {{{ Form::label('Genre') }}}
-           {{{ Form::select('gender[]', $genders, $sound->gender, ['size' => count($genders), 'multiple' => true], ['class' => 'form-control']) }}}
+           {{{ Form::select('gender[]', $genders, $sound->gender, ['multiple' => true], ['class' => 'form-control']) }}}
        </div>
        <div class="form-group">
            {{{ Form::label('En stock ?') }}}

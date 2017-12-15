@@ -9,9 +9,4 @@
     </li>
   </ul>
 </div>
-<div class="search">
-  <form action="/search" method="get" role="search">
-    <input type="search" name="search" placeholder="Chercher un titre">
-    <button type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-  </form>
-</div>
+  <input type="text" id="search" onkeyup="myFunction()" placeholder="Chercher chanteur ou titre..">

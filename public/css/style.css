@@ -61,9 +61,8 @@ th {
 .pagination a:hover {
   color: grey;
 }
-.search form {
-  display: flex;
-  justify-content: flex-end;
+#search {
+  float: right;
   margin-right: 10%;
   margin-top: 30px;
 }
@@ -73,4 +72,7 @@ th {
 }
 footer h3 {
 color: white;
+}
+.height {
+  height: 50px;
 }
