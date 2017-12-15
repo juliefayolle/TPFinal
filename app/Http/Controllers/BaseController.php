@@ -12,6 +12,7 @@ class BaseController extends Controller
       $sounds = Sound::orderBy('singer', 'asc')->paginate(5);
       return view('accueil', compact('sounds'));
     }
+
     public function title()
     {
       $sounds = Sound::orderBy('title', 'asc')->paginate(5);

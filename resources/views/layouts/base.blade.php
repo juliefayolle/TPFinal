@@ -14,7 +14,7 @@
       @yield('main')
     </main>
     <footer>
-      <?php echo $sounds->render(); ?>
+      @yield('footer')
     </footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

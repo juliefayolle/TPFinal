@@ -67,3 +67,6 @@
         </tbody>
       </table>
 @endsection
+@section('footer')
+  <?php echo $sounds->render(); ?>
+@endsection
