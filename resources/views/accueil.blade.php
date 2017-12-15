@@ -1,7 +1,7 @@
 @extends('layouts.base')
 @section('title', 'Accueil')
 @section('main')
-  <h2>Accueil</h2>
+  <h2>ACCUEIL</h2>
     <div class="btn-group" role="group">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Trier par

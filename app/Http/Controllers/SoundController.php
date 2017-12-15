@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Sound;
 use App\Availability;
 use App\Gender;
+use validator;
 
 class SoundController extends Controller
 {
@@ -57,5 +58,17 @@ class SoundController extends Controller
          $sound->genders()->detach();
          $sound->genders()->attach($request->gender);
          return redirect('/');
+     }
+     public function error(Request $request)
+     {
+       $validator = Validator::make($request->all(), [
+         'title' => 'required',
+         'singer' => 'required',
+       ]);
+       if ($validator->fails()) {
+         return redirect('/create')
+          ->withErrors($validator)
+          ->withInput();
+       }
      }
 }

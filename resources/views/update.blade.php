@@ -3,7 +3,7 @@
 @section('main')
    <section class="container">
 
-   <h2>Nouvelle musique</h2>
+   <h2>METTRE A JOUR MUSIQUE</h2>
    {!! Form::open(['url' => '/sound/update']) !!}
     {!! Form::hidden('id', $sound->id) !!}
        <div class="form-group">
